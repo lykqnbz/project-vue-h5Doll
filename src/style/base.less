@@ -1,0 +1,246 @@
+/*
+*[tadeSize='x'] 控制字体大小，规律为：x=12,26,28，30,34,36；
+*[text='x'] 控制文本对齐，规律为：x=left,right,center;文本首行空格x=tin;
+*[box='x'] 控制盒子对齐，规律为：x=left,right,center,none；变成快元素x=inb；
+*[marginleft='x'] 控制盒子向做移4,15；
+*[position='x'] 定位盒子，规律为：x=rela,abso,fix,sta;
+*[img='x'] img图片，规律为图片名字x=toupcg，添加不完整，待续添加
+*[bg='x']  背景图片，规律为图片名字x=toupcg，添加不完整，待续添加;背景颜色：x=grey（f5灰）,x=white（白色）,pink（粉色）；
+*[radius='x'] 盒子圆角，规律为：x=5,10,15,20,50;
+*[color='x'] 字体颜色，规律为：x=pink（粉色），grey3（3灰），grey6（6灰），grey9（9灰），white（白色）；
+*[ovfl='hide'];
+*/
+
+* {
+  line-height: inherit;
+  font-family: '-apple-system', "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+}
+button:active,
+button:visited {
+  background: #b10062;
+}
+i,
+em,
+b,
+strong,
+a {
+  font-style: normal;
+}
+
+img,
+button {
+  border: none;
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.pr {
+  position: relative;
+  z-index: 11;
+}
+
+.pa {
+  position: absolute;
+}
+
+.pf {
+  position: fixed;
+  z-index: 111;
+}
+
+input[disabled] {
+  color: #fff;
+  opacity: 1
+}
+
+input {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+}
+
+[tadeSize='12'] {
+  font-size: 12px;
+}
+
+[tadeSize='26'] {
+  font-size: 0.554rem;
+}
+
+[tadeSize='28'] {
+  font-size: 0.597rem;
+}
+
+[tadeSize='30'] {
+  font-size: 0.64rem;
+}
+
+[tadeSize='34'] {
+  font-size: 0.725rem;
+}
+
+[tadeSize='36'] {
+  font-size: 0.768rem;
+}
+
+[text='center'] {
+  text-align: center;
+}
+
+[text='left'] {
+  text-align: left;
+}
+
+[text='right'] {
+  text-align: right;
+}
+
+[text='tin'] {
+  text-indent: 0.642rem;
+}
+
+[box='center'] {
+  display: block;
+  margin: 0.64rem auto;
+  width: 92%;
+  overflow: hidden;
+}
+
+// 版心
+.container {
+  padding: 0 15px;
+}
+
+[box='left'] {
+  float: left;
+}
+
+[box='right'] {
+  float: right;
+}
+
+[box='none'] {
+  float: right;
+}
+
+[box='inb'] {
+  display: inline-block;
+}
+
+[marginleft='15'] {
+  margin-left: 15%;
+}
+
+[marginleft='4'] {
+  margin-left: 4%;
+}
+
+[position='rela'] {
+  position: relative;
+}
+
+[position='abso'] {
+  position: absolute;
+}
+
+[position='fix'] {
+  position: fixed;
+}
+
+[position='sta'] {
+  position: static;
+}
+
+[img='toupcg'] {
+  width: 1.109rem;
+  height: 0.832rem;
+  margin: 0 7px;
+}
+
+
+[bg='grey'] {
+  background: #f5f5f5;
+}
+
+[bg='white'] {
+  background: #fff;
+  color: #ed007c;
+}
+
+[bg='pink'] {
+  background: #ed007c;
+  color: #fff;
+}
+
+button[bg='pink']:active {
+  background: #a90d5e;
+  color: #ddd8d5;
+}
+
+[radius='5'] {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+[radius='10'] {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+[radius='15'] {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+[radius='20'] {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+[radius='50'] {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+[color='pink'] {
+  color: #ed007c;
+}
+
+[color='grey3'] {
+  color: #333;
+}
+
+[color='grey6'] {
+  color: #666;
+}
+
+[color='grey9'] {
+  color: #999;
+}
+
+[color='white'] {
+  color: #fff;
+}
+
+[ovfl='hide'] {
+  overflow: hidden;
+}
+
+[dis='none'] {
+  display: none;
+}
+
+[dis='block'] {
+  display: block;
+}
